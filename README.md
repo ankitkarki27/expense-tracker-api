@@ -1,9 +1,8 @@
 # Expense Tracker API
 ## Developed by : Ankit Karki
----
 ## A Django a REST API for expense/income tracking with JWT User authentication.
 
----
+
 
 ## Table of Contents
 - [Features](#-features)
