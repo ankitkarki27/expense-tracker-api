@@ -1,7 +1,7 @@
 # Expense Tracker API
 ## Developed by : Ankit Karki
 ---
-A Django a REST API for expense/income tracking with JWT User authentication.
+## A Django a REST API for expense/income tracking with JWT User authentication.
 
 ---
 
@@ -16,7 +16,7 @@ A Django a REST API for expense/income tracking with JWT User authentication.
 
 ---
 
-## ✨ Features
+## Features
 - JWT authentication (access/refresh tokens)
 - Personal expense/income tracking
 - Automatic tax calculation (flat amount or percentage)
@@ -26,7 +26,7 @@ A Django a REST API for expense/income tracking with JWT User authentication.
 
 ---
 
-## 🛠️ Setup
+## Setup
 
 ### Prerequisites
 - Python 3.10+
@@ -70,7 +70,7 @@ A Django a REST API for expense/income tracking with JWT User authentication.
 
 ---
 
-## 🔐 Authentication
+## Authentication
 
 ### Register
 **POST** `/api/auth/register/`
@@ -107,7 +107,7 @@ Authorization: Bearer <access_token>
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 | Endpoint                | Method | Description                     |
 |-------------------------|--------|---------------------------------|
@@ -119,7 +119,7 @@ Authorization: Bearer <access_token>
 
 ---
 
-## 📋 Examples
+## Examples
 
 ### Create Expense
 **POST** `/api/expenses/`
@@ -158,7 +158,7 @@ Response (201 Created):
 
 ---
 
-## 👑 Admin Access
+## Admin Access
 1. Create superuser:
    ```bash
    python manage.py createsuperuser
@@ -172,7 +172,7 @@ Response (201 Created):
 
 ---
 
-## ℹ️ Notes
+## Notes
 - **Timezones**: All timestamps in UTC
 - **Pagination**: Default 4 items/page (`?page_size` to override)
 - **Tax Types**: 
@@ -181,7 +181,7 @@ Response (201 Created):
 
 ---
 
-## 🛠️ Built With
+## Built With
 - Django REST Framework
 - SimpleJWT
 - PostgreSQL
