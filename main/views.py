@@ -23,8 +23,8 @@ class ExpenseIncomeViewSet(viewsets.ModelViewSet):
     
     def get_queryset(self):
         if self.request.user.is_superuser:
-            return ExpenseIncome.objects.all()
-        return ExpenseIncome.objects.filter(user=self.request.user)
+            return ExpenseIncome.objects.all().order_by('-created_at')
+        return ExpenseIncome.objects.filter(user=self.request.user).order_by('-created_at')
     
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)

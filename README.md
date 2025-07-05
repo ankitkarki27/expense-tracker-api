@@ -1,9 +1,7 @@
-```markdown
 # Expense Tracker API
-# Developed by : Ankit Karki
-
-A Django REST API for tracking personal finances with JWT authentication.
-
+## Developed by : Ankit Karki
+---
+A Django a REST API for expense/income tracking with JWT User authentication.
 
 ---
 
@@ -20,11 +18,11 @@ A Django REST API for tracking personal finances with JWT authentication.
 
 ## ✨ Features
 - JWT authentication (access/refresh tokens)
-- CRUD operations for expenses/incomes
-- Tax calculation (flat/percentage)
-- Pagination & filtering
+- Personal expense/income tracking
+- Automatic tax calculation (flat amount or percentage)
+- Paginated API responses
 - User-specific data isolation
-- Admin dashboard for superusers
+- Complete CRUD operations
 
 ---
 
@@ -152,7 +150,9 @@ Response (201 Created):
   "count": 10,
   "next": "http://localhost:8000/api/expenses/?page=2&page_size=3",
   "previous": "http://localhost:8000/api/expenses/?page_size=1",
-  "results": [...]
+  "results": [
+
+  ]
 }
 ```
 
@@ -186,5 +186,3 @@ Response (201 Created):
 - SimpleJWT
 - PostgreSQL
 - Python 3.10
-
-```
